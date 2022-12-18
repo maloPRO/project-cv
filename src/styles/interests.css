@@ -1,0 +1,15 @@
+.interests {
+  background-color: #444;
+  color: #fffada;
+  padding: 20px;
+}
+.interests h3 {
+  font-size: 1.2rem;
+  border-bottom: 3px solid #777;
+  font-weight: 900;
+  padding-bottom: 3px;
+}
+.interests ul li {
+  padding: 3px 0;
+  list-style: none;
+}
