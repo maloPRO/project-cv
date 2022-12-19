@@ -1,8 +1,7 @@
 import React, { Component } from "react";
+import ProfilePic from "./profilePic";
 import { EditText } from 'react-edit-text';
 import '../styles/personalInfo.css';
-import sample from '../images/sample.jpg';
-
 
 class PersonalInfo extends Component {
   constructor(props) {
@@ -12,14 +11,15 @@ class PersonalInfo extends Component {
       user: {
         name: this.props.name,
         title: this.props.title,
-        profile: this.props.profile
       }
     }
   }
   render () {
     return (
       <div className="personalInfo">
-        <img src={sample} className='dp' alt=""></img>
+        <div className="picContainer">
+          <ProfilePic/>
+        </div>
         <EditText
          name="name"
          defaultValue={this.props.user.name}

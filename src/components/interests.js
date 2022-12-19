@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { EditText } from 'react-edit-text';
 import '../styles/interests.css';
 
 class Interests extends Component {
@@ -13,7 +14,13 @@ class Interests extends Component {
      render() {
       const interests = this.props.interests;
       const interestList = interests.map((interest) => 
-        <li key={interest.id}>{interest.name}</li>
+        <li key={interest.id}>
+          <EditText
+          name="interests"
+          defaultValue= {interest.name}
+          inputClassName = 'interestInput'
+        />
+        </li>
       )
       return (
         <div className="interests">
