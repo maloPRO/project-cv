@@ -1,12 +1,12 @@
 .references {
-  padding: 20px;
-  background-color: #666;
+  padding: 30px;
+  background-color: #646D9B;
 }
 .references h3 {
   font-size: 1.2rem;
-  border-bottom: 3px solid #333;
+  border-bottom: 3px solid #111;
   font-weight: 900;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
 }
 .referee {
   margin-bottom: 10px;

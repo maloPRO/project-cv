@@ -13,7 +13,7 @@ class Interests extends Component {
      render() {
       const interests = this.props.interests;
       const interestList = interests.map((interest) => 
-        <li>{interest}</li>
+        <li key={interest.id}>{interest.name}</li>
       )
       return (
         <div className="interests">

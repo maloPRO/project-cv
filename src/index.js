@@ -5,6 +5,7 @@ import './styles/index.css';
 import Contacts from './components/contacts';
 import Interests from './components/interests';
 import References from './components/references';
+import uniqid from 'uniqid';
 
 const user = {
   name: 'Gilbert Malova',
@@ -17,7 +18,20 @@ const contacts = {
   address: 'Eldoret, Kenya',
 }
 
-const interests = ['Coding', 'Reading', 'Playing Chess', 'Hiking'];
+const interests = [
+  {
+    name: 'Chess',
+    id: uniqid()
+  },
+  {
+    name: 'Coding',
+    id: uniqid()
+  },
+  {
+    name: 'Reading Novels',
+    id: uniqid()
+  }
+];
 
 const referees = [
   {
@@ -25,21 +39,24 @@ const referees = [
     names: 'Mate Boniface',
     org: 'Childrens Transformation Project',
     phone: '+254 719 875 689',
-    mail: 'mateboniface@gmail.com'
+    mail: 'mateboniface@gmail.com',
+    id: uniqid()
   },
   {
     title: 'Mrs.',
     names: 'Lynett Odida',
     org: 'Ministry of Labor',
     phone: '+254 727 948 443',
-    mail: 'lodida78@yahoo.com'
+    mail: 'lodida78@yahoo.com',
+    id: uniqid()
   },
   {
     title: 'Mr.',
     names: 'Byrum Charles',
     org: 'Cubahiro International School',
     phone: '+257 435 553 432',
-    mail: 'byrumcharles@gmail.com'
+    mail: 'byrumcharles@gmail.com',
+    id: uniqid()
   }
 ]
 const root = ReactDOM.createRoot(document.getElementById('root'));

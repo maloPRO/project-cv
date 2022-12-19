@@ -1,13 +1,14 @@
 .interests {
-  background-color: #444;
-  color: #fffada;
-  padding: 20px;
+  background-color: #fdba74;
+  color: #111;
+  padding: 30px;
 }
 .interests h3 {
   font-size: 1.2rem;
-  border-bottom: 3px solid #777;
+  border-bottom: 3px solid #111;
   font-weight: 900;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 .interests ul li {
   padding: 3px 0;

@@ -13,11 +13,11 @@ class References extends Component {
   render() {
     const referees = this.props.referees;
     const refereeList = referees.map((referee) => 
-      <div className="referee">
+      <div key={referee.id} className="referee">
         <p>{referee.title} {referee.names}</p>
         <p>{referee.org}</p>
-        <p>{referee.phone}</p>
-        <p>{referee.mail}</p>
+        <p><b>Phone: </b>{referee.phone}</p>
+        <p><b>Email: </b>{referee.mail}</p>
       </div>
     )
     return (

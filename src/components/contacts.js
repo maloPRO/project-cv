@@ -20,9 +20,10 @@ class Contacts extends Component {
   render() {
     return (
       <div className="contactInfo">
-        <p> <div><img className="icons" src={telIcon} alt=''></img></div> {this.props.contacts.tel}</p>
-        <p><div><img className="icons" src={mailIcon} alt=''></img></div>{this.props.contacts.email}</p>
-        <p><div><img className="icons" src={adressIcon} alt=''></img></div>{this.props.contacts.address}</p>
+        <h3>Contact Information</h3>
+        <p><span><img className="icons" src={telIcon} alt=''></img></span>{this.props.contacts.tel}</p>
+        <p><span><img className="icons" src={mailIcon} alt=''></img></span>{this.props.contacts.email}</p>
+        <p><span><img className="icons" src={adressIcon} alt=''></img></span>{this.props.contacts.address}</p>
       </div>
     )
   }
