@@ -9,9 +9,8 @@
 #root {
   width: 100vw;
   min-height: 100vh;
-  background-color: #999;
   display: grid;
-  grid-template: 1fr / 1fr 4fr;
+  grid-template: 1fr / 1fr 3.5fr;
 }
 .left {
   grid-area: 1/1/2/2;
