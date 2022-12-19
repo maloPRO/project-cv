@@ -16,15 +16,6 @@
   grid-area: 1/1/2/2;
   height: 100%;
 }
-
-.picContainer {
-  width: 10rem;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #646D9B;
-  border-radius: 50%;
-
+.right {
+  padding: 0 30px;
 }
