@@ -7,17 +7,21 @@
 .personalInfo {
   display: flex ;
   flex-direction: column;
-  background-color: #666;
+  background-color: #fdba74;
   align-items: center;
   padding-top: 20px;
 }
 
-.personalInfo p {
+.personalInfo .name,
+.personalInfo .title {
   text-align: center;
-  background-color: #444;
+  background-color: #fdba74;
   width: 100%;
   padding-top: 5px;
-  color: #fffada;
+  color: #111;
+}
+.personalInfo p:last-child {
+  padding-bottom: 10px;
 }
 .name {
   font-size: 1.8rem;
@@ -26,22 +30,43 @@
 .title {
   padding-bottom: 5px;
 }
-
+.nameInput {
+  width: 70% ;
+  height: 1.5rem;
+  font-size: 1rem;
+  padding-left: 10px;
+  border: none;
+}
+.titleInput {
+  width: 70%;
+  height: 1rem;
+  font-size: .9rem;
+  padding-left: 10px;
+  border: none;
+}
+.nameInput:focus {
+  border: none;
+}
 .contactInfo {
-  background-color: #666;
-  padding: 10px 0;
+  background-color: #646D9B;
+  padding: 30px;
 }
 
 .contactInfo p{
-  padding: 5px 20px;
+  padding: 5px 0;
   color: #000;
   display: flex;
 }
-.contactInfo div {
+.contactInfo span {
   display: grid;
   align-items: center;
   justify-content: center;
   padding-right: 10px;
+}
+.contactInfo h3 {
+  padding: 5px 0;
+  border-bottom: 3px solid #111;
+  margin-bottom: 5px;
 }
 .icons {
   width: 1rem;
