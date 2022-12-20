@@ -16,9 +16,9 @@ const user = {
 }
 
 const contacts = {
-  tel: '+254 797 177 923',
-  email: 'johnsnow@yahoo.com',
-  address: 'Winterfel, The North',
+  tel: '+1 234 567 890',
+  email: 'example@email.com',
+  address: 'City, Country',
 }
 
 const interests = [
@@ -38,27 +38,27 @@ const interests = [
 
 const referees = [
   {
-    title: 'Mr.',
-    names: 'Fred Johnson',
-    org: 'Tycho station, the Belt',
-    phone: '+2 719 844 547',
-    mail: 'fredjohnson.tycho.belt',
+    title: 'Mr/Mrs.',
+    names: 'Name Surname',
+    org: 'Organization',
+    phone: '+1 234 567 890',
+    mail: 'example@email.com',
     id: uniqid()
   },
   {
-    title: 'Mr.',
-    names: 'Clark Kent',
-    org: 'Daily Planet',
-    phone: '+1 727 945 774',
-    mail: 'notSuperman@krypton.com',
+    title: 'Mr/Mrs.',
+    names: ' Name Surname',
+    org: 'Organization',
+    phone: '+1 234 567 890',
+    mail: 'example@email.com',
     id: uniqid()
   },
   {
-    title: 'Mr.',
-    names: 'Wirriam Luto',
-    org: 'Husla Incorporated',
-    phone: '+257 498 553 441',
-    mail: 'nabii@.go.ke',
+    title: 'Mr/Mrs.',
+    names: ' Name Surname',
+    org: 'Organization',
+    phone: '+1 234 567 890',
+    mail: 'example@email.com',
     id: uniqid()
   }
 ]
