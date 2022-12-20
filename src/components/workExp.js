@@ -18,13 +18,12 @@ class Work extends Component {
       <div key={job.id} className='job'>
         <div>
           <div className="title"><EditText defaultValue={job.title}/></div>
-          <div className="date"><EditText defaultValue={job.startDate} /> - <EditText defaultValue={job.endDate} /></div>
+          <div className="date"><EditText defaultValue={job.date} /></div>
         </div>
         <div>
           <div className="org"><EditText defaultValue={job.org} /></div>
-          <div className="roles"><ul>{job.roles.map((role) => <li key={role.id}><EditText defaultValue={role.name} /></li>)}</ul></div>
+          <div className="roles"><span>Duties & Responsibilities</span><ul>{job.roles.map((role) => <li key={role.id}><EditText defaultValue={role.name} /></li>)}</ul></div>
         </div>
-        <ul>{}</ul>
       </div>
   )
     return (
