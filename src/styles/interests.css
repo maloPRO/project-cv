@@ -13,3 +13,8 @@
   padding: 3px 0;
   list-style: none;
 }
+.interestInput {
+  width: 90%;
+  height: 1.5rem;
+  padding: 1px 5px;
+}
