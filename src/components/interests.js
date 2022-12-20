@@ -29,7 +29,5 @@ class Interests extends Component {
         </div>
       )
      }
-
-
 }
 export default Interests;
