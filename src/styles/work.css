@@ -40,3 +40,13 @@
   font-weight: 600;
   padding: 10px 0;
 }
+.workInput {
+  width: 70%;
+  height: 1.5rem;
+  padding: 1px 5px;
+}
+.roleInput {
+  width: 90%;
+  height: 1.5rem;
+  padding: 1px 5px;
+}

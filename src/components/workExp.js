@@ -17,12 +17,12 @@ class Work extends Component {
     const jobList = jobs.map((job) => 
       <div key={job.id} className='job'>
         <div>
-          <div className="title"><EditText defaultValue={job.title}/></div>
-          <div className="date"><EditText defaultValue={job.date} /></div>
+          <div className="title"><EditText inputClassName="workInput" defaultValue={job.title}/></div>
+          <div className="date"><EditText inputClassName="workInput" defaultValue={job.date} /></div>
         </div>
         <div>
           <div className="org"><EditText defaultValue={job.org} /></div>
-          <div className="roles"><span>Duties & Responsibilities</span><ul>{job.roles.map((role) => <li key={role.id}><EditText defaultValue={role.name} /></li>)}</ul></div>
+          <div className="roles"><span>Duties & Responsibilities</span><ul>{job.roles.map((role) => <li key={role.id}><EditText inputClassName="roleInput" defaultValue={role.name} /></li>)}</ul></div>
         </div>
       </div>
   )
