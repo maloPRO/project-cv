@@ -7,6 +7,8 @@ import Interests from './components/interests';
 import References from './components/references';
 import uniqid from 'uniqid';
 import Work from './components/workExp';
+import Education from './components/education';
+import Skills from './components/skills';
 
 const user = {
   name: 'Your Name',
@@ -65,8 +67,7 @@ const jobs = [
     id: uniqid(),
     title: 'Job Title',
     org: 'Organization',
-    startDate: 'Month Year',
-    endDate: 'Month Year',
+    date: 'Month - Year',
     roles: [
       {
         id: uniqid(),
@@ -83,6 +84,14 @@ const jobs = [
       {
         id: uniqid(),
         name: 'Responsibility four'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility five'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility six'
       }
     ]
   },
@@ -90,8 +99,7 @@ const jobs = [
     id: uniqid(),
     title: 'Job Title',
     org: 'Organization',
-    startDate: 'Month Year',
-    endDate: 'Month Year',
+    date: 'Month - Year',
     roles: [
       {
         id: uniqid(),
@@ -108,15 +116,23 @@ const jobs = [
       {
         id: uniqid(),
         name: 'Responsibility four'
+      },     
+      {
+        id: uniqid(),
+        name: 'Responsibility five'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility six'
       }
+
     ]
   },
   { 
     id: uniqid(),
     title: 'Job Title',
     org: 'Organization',
-    startDate: 'Month Year',
-    endDate: 'Month Year',
+    date: 'Month - Year',
     roles: [
       {
         id: uniqid(),
@@ -133,8 +149,55 @@ const jobs = [
       {
         id: uniqid(),
         name: 'Responsibility four'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility five'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility six'
       }
     ]
+  }
+]
+
+const schools = [
+  {
+    name: 'School Name',
+    year: 'Year',
+    course: 'Course',
+    honors: 'Honors',
+    id: uniqid()
+  },
+  {
+    name: 'School Name',
+    year: 'Year',
+    course: 'Course',
+    honors: 'Honors',
+    id: uniqid()
+  }
+]
+const skills = [
+  {
+    name: 'Skill 1',
+    id: uniqid()
+  },
+  {
+    name: 'skill 2',
+    id: uniqid()
+  },
+  {
+    name: 'Skill 3',
+    id: uniqid()
+  },
+  {
+    name: 'Skill 4',
+    id: uniqid()
+  },
+  {
+    name: 'Skill 5',
+    id: uniqid()
   }
 ]
 
@@ -149,6 +212,8 @@ root.render(
     </div>
     <div className='right'>
       <Work jobs= {jobs}/>
+      <Education schools = {schools} />
+      <Skills skills = {skills} />
     </div>
   </React.StrictMode>
 );
