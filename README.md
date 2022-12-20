@@ -7,3 +7,5 @@ This is an Odin Project CV project for the React JS curriculum
 - CSS
 - Webpack
 - Npm
+### Live Preview
+[CV - Maker](https://malopro.github.io/project-cv/)
