@@ -19,7 +19,7 @@ class Skills extends Component {
           <EditText
           name="skills"
           defaultValue= {skill.name}
-          inputClassName = 'interestInput'
+          inputClassName = 'skillInput'
         />
         </li>
       )

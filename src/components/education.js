@@ -16,10 +16,10 @@ class Education extends Component {
     const schools = this.props.schools;
     const schoolList = schools.map((school) => 
       <div key={school.id} className="school">
-        <div className="schoolName"><EditText defaultValue={school.name} /></div>
-        <div className="course"><EditText defaultValue={school.course} /></div>
-        <div className="year"><EditText defaultValue={school.year} /></div>
-        <div className="honors"><EditText defaultValue={school.honors} /></div>
+        <div className="schoolName"><EditText inputClassName="workInput" defaultValue={school.name} /></div>
+        <div className="course"><EditText inputClassName="workInput" defaultValue={school.course} /></div>
+        <div className="year"><EditText inputClassName="workInput" defaultValue={school.year} /></div>
+        <div className="honors"><EditText inputClassName="workInput" defaultValue={school.honors} /></div>
       </div>
     )
     return (
