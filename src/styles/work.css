@@ -1,20 +1,20 @@
 .icon {
   width: 1.5rem;
+  margin-right: 10px;
 }
 .workExp {
-  padding: 0 30px;
+  
 }
 .work {
   padding: 10px 0;
-  border-bottom: 3px solid #888;
+  border-bottom: 3px solid #333;
   display: flex ;
   align-items: center;
   font-size: 1.3rem;
   font-weight: 900;
+  margin-bottom: 20px;
 }
-.work img {
-  margin-right: 10px;
-}
+
 
 .workCategory {
   display: grid;
@@ -24,8 +24,6 @@
   display: grid;
   grid-template: 1fr / 1fr 2fr;
   padding: 10px;
-  outline: 1px solid #999;
-  margin-top: 10px;
 }
 .title {
   font-weight: 900;
@@ -37,6 +35,11 @@
   display: flex;
 }
 .roles li {
-  color: #333;
+  color: #111;
   list-style-type: circle;
+  padding: 1px 0;
+}
+.roles span {
+  font-weight: 600;
+  padding: 10px 0;
 }

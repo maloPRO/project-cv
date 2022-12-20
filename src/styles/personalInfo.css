@@ -13,15 +13,11 @@
 .personalInfo {
   display: flex ;
   flex-direction: column;
-  background-color: #fdba74;
   align-items: center;
-  padding-top: 20px;
 }
-
 .personalInfo .name,
 .personalInfo .title {
   text-align: center;
-  background-color: #fdba74;
   width: 100%;
   padding-top: 5px;
   color: #111;
@@ -29,7 +25,7 @@
 .personalInfo p:last-child {
   padding-bottom: 10px;
 }
-.name {
+.personalInfo .name {
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -55,8 +51,7 @@
   
 }
 .contactInfo {
-  background-color: #646D9B;
-  padding: 30px;
+  padding-top: 20px;
 }
 
 .contactInfo div{

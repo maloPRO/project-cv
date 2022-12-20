@@ -1,6 +1,5 @@
 .references {
-  padding: 30px;
-  background-color: #646D9B;
+  padding-top: 20px;
 }
 .references h3 {
   font-size: 1.2rem;
@@ -9,12 +8,32 @@
   padding-bottom: 5px;
 }
 .referee {
-  margin-bottom: 10px;
   padding: 5px 0;
 }
-.referee p {
+.referee div {
   padding: 2px 0;
 }
-.referee p:first-child {
+
+.name {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.refOrg {
+  font-size: .9rem;
+  font-weight: 600;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+}
+.mail {
+  display: flex;
+  align-items: center;
+}
+.referee div b {
+  margin-right: 3px;
   font-weight: 700;
+  font-size: .9rem;
 }
