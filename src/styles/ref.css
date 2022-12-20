@@ -37,3 +37,12 @@
   font-weight: 700;
   font-size: .9rem;
 }
+.refTitleInput {
+  height: 1.5rem;
+  width: 2rem;
+}
+.refInput {
+  height: 1.5rem;
+  width: 90%;
+  padding: 1px 5px;
+}

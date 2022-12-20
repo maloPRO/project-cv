@@ -15,10 +15,10 @@ class References extends Component {
     const referees = this.props.referees;
     const refereeList = referees.map((referee) => 
       <div key={referee.id} className="referee">
-        <div className="name"><EditText defaultValue={referee.title} /><EditText defaultValue={referee.names} /></div>
-        <div className="refOrg"><EditText defaultValue={referee.org} /></div>
-        <div className="phone"><b>Phone:  </b><EditText defaultValue={referee.phone} /></div>
-        <div className="mail"><b>Email: </b><EditText defaultValue={referee.mail} /></div>
+        <div className="name"><EditText inputClassName="refTitleInput" defaultValue={referee.title} /><EditText inputClassName="refInput" defaultValue={referee.names} /></div>
+        <div className="refOrg"><EditText inputClassName="refInput" defaultValue={referee.org} /></div>
+        <div className="phone"><b>Phone:  </b><EditText inputClassName="refInput" defaultValue={referee.phone} /></div>
+        <div className="mail"><b>Email: </b><EditText inputClassName="refInput" defaultValue={referee.mail} /></div>
       </div>
     )
     return (
