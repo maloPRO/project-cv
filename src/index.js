@@ -60,6 +60,84 @@ const referees = [
     id: uniqid()
   }
 ]
+const jobs = [
+  { 
+    id: uniqid(),
+    title: 'Job Title',
+    org: 'Organization',
+    startDate: 'Month Year',
+    endDate: 'Month Year',
+    roles: [
+      {
+        id: uniqid(),
+        name: 'Responsibility one'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility two'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility three'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility four'
+      }
+    ]
+  },
+  { 
+    id: uniqid(),
+    title: 'Job Title',
+    org: 'Organization',
+    startDate: 'Month Year',
+    endDate: 'Month Year',
+    roles: [
+      {
+        id: uniqid(),
+        name: 'Responsibility one'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility two'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility three'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility four'
+      }
+    ]
+  },
+  { 
+    id: uniqid(),
+    title: 'Job Title',
+    org: 'Organization',
+    startDate: 'Month Year',
+    endDate: 'Month Year',
+    roles: [
+      {
+        id: uniqid(),
+        name: 'Responsibility one'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility two'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility three'
+      },
+      {
+        id: uniqid(),
+        name: 'Responsibility four'
+      }
+    ]
+  }
+]
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -70,7 +148,7 @@ root.render(
       <References referees = {referees} />
     </div>
     <div className='right'>
-      <Work/>
+      <Work jobs= {jobs}/>
     </div>
   </React.StrictMode>
 );
