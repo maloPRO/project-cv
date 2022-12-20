@@ -33,15 +33,15 @@
   padding-bottom: 5px;
 }
 .nameInput {
-  width: 70% ;
+  width: 90% ;
   height: 1.5rem;
   font-size: 1rem;
   padding-left: 10px;
   border: none;
 }
 .titleInput {
-  width: 70%;
-  height: 1rem;
+  width: 90%;
+  height: 1.5rem;
   font-size: .9rem;
   padding-left: 10px;
   border: none;
@@ -75,12 +75,15 @@
   height: 1rem;
 
 }
+.addressInput,
+.mailInput,
 .telInput {
   width: 90%;
+  height: 1.5rem;
+  border: none;
+  padding: 1px 5px;
 }
-.addressInput {
-  width: 90%;
-}
-.mailInput {
-  width: 90%;
+
+.addressInput:focus {
+  border: none;
 }
