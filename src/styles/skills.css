@@ -1,0 +1,17 @@
+.skill {
+  padding: 10px 0;
+  border-bottom: 3px solid #333;
+  display: flex ;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.skills ul {
+  list-style-type: none;
+  display: grid;
+  grid-template: repeat(3, 1fr) / 1fr 2fr;
+}
+.skills ul li {
+  padding: 2px 0;
+}
