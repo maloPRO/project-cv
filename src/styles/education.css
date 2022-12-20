@@ -1,0 +1,30 @@
+.education {
+  padding-top: 20px;
+}
+.eduTitle img {
+  width: 1.5rem;
+  margin-right: 10px;
+}
+.eduTitle {
+  padding: 10px 0;
+  border-bottom: 3px solid #333;
+  display: flex ;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.school {
+  display: grid;
+  grid-template: 1fr / 1fr 2fr;
+  padding-bottom: 10px;
+}
+.school div {
+  padding: 1px 0;
+}
+.schoolName {
+  font-weight: 700;
+}
+.course {
+  font-weight: 700;
+}
