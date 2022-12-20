@@ -18,20 +18,3 @@
 .referee p:first-child {
   font-weight: 700;
 }
-.refName {
-  display: flex;
-  font-weight: 900;
-}
-.phone,
-.email {
-  display: flex;
-}
-.titleInput {
-  width: 20%;
-}
-.phoneInput,
-.emailInput,
-.namesInput,
-.orgInput {
-  width: 90%;
-}

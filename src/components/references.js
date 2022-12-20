@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { EditText } from "react-edit-text";
 import '../styles/ref.css'
 
 class References extends Component {
@@ -15,14 +14,10 @@ class References extends Component {
     const referees = this.props.referees;
     const refereeList = referees.map((referee) => 
       <div key={referee.id} className="referee">
-
-        <div className="refName">
-          <EditText name="title" defaultValue={referee.title} inputClassName = 'titleInput'/>
-          <EditText name="names" defaultValue={referee.names} inputClassName = 'namesInput' />
-        </div>
-        <div className="org"><EditText name="org" type="text" inputClassName="orgInput" defaultValue={referee.org} /></div>
-        <div className="phone"><b>Phone: </b><EditText name="phone" type="number" inputClassName="phoneInput" defaultValue={referee.phone} /></div>
-        <div className="email"><b>Email: </b><EditText name="email" type="email" inputClassName="emailInput" defaultValue={referee.mail} /> </div>
+        <p>{referee.title} {referee.names}</p>
+        <p>{referee.org}</p>
+        <p><b>Phone: </b>{referee.phone}</p>
+        <p><b>Email: </b>{referee.mail}</p>
       </div>
     )
     return (

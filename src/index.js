@@ -6,30 +6,29 @@ import Contacts from './components/contacts';
 import Interests from './components/interests';
 import References from './components/references';
 import uniqid from 'uniqid';
-import Work from './components/workExp';
 
 const user = {
-  name: 'Your Name',
-  title: 'Job Title',
+  name: 'Gilbert Malova',
+  title: 'Software Developer',
 }
 
 const contacts = {
-  tel: '+254 797 177 923',
-  email: 'johnsnow@yahoo.com',
-  address: 'Winterfel, The North',
+  tel: '+254 792 184 923',
+  email: 'malovagilbert@gmail.com',
+  address: 'Eldoret, Kenya',
 }
 
 const interests = [
   {
-    name: 'Interest 1',
+    name: 'Chess',
     id: uniqid()
   },
   {
-    name: 'Interest 2',
+    name: 'Coding',
     id: uniqid()
   },
   {
-    name: 'Interest 3',
+    name: 'Reading Novels',
     id: uniqid()
   }
 ];
@@ -37,26 +36,26 @@ const interests = [
 const referees = [
   {
     title: 'Mr.',
-    names: 'Fred Johnson',
-    org: 'Tycho station, the Belt',
-    phone: '+2 719 844 547',
-    mail: 'fredjohnson.tycho.belt',
+    names: 'Mate Boniface',
+    org: 'Childrens Transformation Project',
+    phone: '+254 719 875 689',
+    mail: 'mateboniface@gmail.com',
+    id: uniqid()
+  },
+  {
+    title: 'Mrs.',
+    names: 'Lynett Odida',
+    org: 'Ministry of Labor',
+    phone: '+254 727 948 443',
+    mail: 'lodida78@yahoo.com',
     id: uniqid()
   },
   {
     title: 'Mr.',
-    names: 'Clark Kent',
-    org: 'Daily Planet',
-    phone: '+1 727 945 774',
-    mail: 'notSuperman@krypton.com',
-    id: uniqid()
-  },
-  {
-    title: 'Mr.',
-    names: 'Wirriam Luto',
-    org: 'Husla Incorporated',
-    phone: '+257 498 553 441',
-    mail: 'nabii@.go.ke',
+    names: 'Byrum Charles',
+    org: 'Cubahiro International School',
+    phone: '+257 435 553 432',
+    mail: 'byrumcharles@gmail.com',
     id: uniqid()
   }
 ]
@@ -70,7 +69,6 @@ root.render(
       <References referees = {referees} />
     </div>
     <div className='right'>
-      <Work/>
     </div>
   </React.StrictMode>
 );
