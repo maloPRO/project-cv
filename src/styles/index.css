@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-#root {
+.app {
   width: 100vw;
   min-height: 100vh;
   display: grid;
