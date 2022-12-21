@@ -117,14 +117,6 @@ class App extends Component {
         {
           name: 'Skill 3',
           id: uniqid()
-        },
-        {
-          name: 'Skill 4',
-          id: uniqid()
-        },
-        {
-          name: 'Skill 5',
-          id: uniqid()
         }
       ]
     }

@@ -1,20 +1,60 @@
-.skill {
-  padding: 10px 0;
-  border-bottom: 3px solid #333;
-  display: flex ;
-  align-items: center;
-  font-size: 1.3rem;
-  font-weight: 900;
-  margin-bottom: 20px;
+.skills {
+  color: #111;
+  padding-top: 20px;
 }
-.skills ul {
-  list-style-type: none;
+.skills h3 {
+  font-size: 1.2rem;
+  border-bottom: 3px solid #111;
+  font-weight: 900;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 .skills ul li {
-  padding: 2px 0;
+  padding: 3px 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.skills ul li button {
+  border: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: inherit;
+  background: url('../images/plus.png');
+  background-size: contain;
+  transform: rotate(45deg);
 }
 .skillInput {
   width: 80%;
   height: 1.5rem;
   padding: 1px 5px;
+}
+.skillList {
+  display: flex;
+  justify-content: space-between;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+#addSkill {
+  text-align: center;
+  font-weight: 700;
+  color: green;
+  margin: 0 auto;
+  height: 1.3rem;
+  width: 5rem;
+  border: none;
+  border-radius: 3px;
+}
+.skills ul li button:hover {
+  background-color: rgb(226, 84, 84);
+  padding: 1px ;
+}
+.add {
+  display: flex;
+  justify-content: center;
 }
