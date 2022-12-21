@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PersonalInfo from './personal';
-import '../styles/index.css';
+import '../styles/App.css';
 import Contacts from './contacts';
 import Interests from './interests';
 import References from './references';
@@ -8,6 +8,7 @@ import uniqid from 'uniqid';
 import Work from './workExp';
 import Education from './education';
 import Skills from './skills';
+
 
 class App extends Component {
   constructor(props) {
@@ -38,14 +39,6 @@ class App extends Component {
         }
       ],
       referees: [
-        {
-          title: 'Mr/Mrs.',
-          names: 'Name Surname',
-          org: 'Organization',
-          phone: '+1 234 567 890',
-          mail: 'example@email.com',
-          id: uniqid()
-        },
         {
           title: 'Mr/Mrs.',
           names: 'Name Surname',
