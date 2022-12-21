@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { EditText } from "react-edit-text";
 import workIcon from '../images/work.png';
 import '../styles/work.css';
+import uniqid from 'uniqid';
 
 class Work extends Component {
   constructor(props) {
@@ -12,14 +13,58 @@ class Work extends Component {
     }
 
   }
+  addJob = (e) => {
+    this.setState({
+      jobs: this.props.jobs.push({
+          id: uniqid(),
+          title: 'Job Title',
+          org: 'Organization',
+          date: 'Month - Year',
+          roles: [
+            {
+              id: uniqid(),
+              name: 'Responsibility one'
+            },
+            {
+              id: uniqid(),
+              name: 'Responsibility two'
+            },
+            {
+              id: uniqid(),
+              name: 'Responsibility three'
+            },
+            {
+              id: uniqid(),
+              name: 'Responsibility four'
+            },
+            {
+              id: uniqid(),
+              name: 'Responsibility five'
+            },
+            {
+              id: uniqid(),
+              name: 'Responsibility six'
+            }
+          ]
+      })
+    })
+  }
   deletejob = (e) => {
     e.target.parentElement.parentElement.parentElement.remove();  
   }
-  hideDeleteBtn = (e) => {
-    e.target.querySelector('#deleteJob').className = 'hide'
+  hideButton = (e) => {
+    e.target.querySelector('#deleteJob').className = 'hideBtn';
+    e.target.querySelector('#addWork').className = 'hideBtn';
   }
-  showDeleteBtn = (e) => {
-    e.target.querySelector('#deleteJob').className = 'show'
+  hideAdd = (e) => {
+    e.target.querySelector('#addWork').className = 'hideBtn';
+  }
+  showAdd = (e) => {
+    e.target.querySelector('#addWork').className = 'showBtn';
+  }
+  showButton = (e) => {
+    e.target.querySelector('#deleteJob').className = 'showBtn';
+    e.target.querySelector('#addWork').className = 'showBtn';
   }
   render() {
     const jobs = this.props.jobs;
@@ -27,8 +72,8 @@ class Work extends Component {
       <div 
         key={job.id} 
         className='job'
-        onMouseEnter={this.showDeleteBtn}
-        onMouseLeave={this.hideDeleteBtn}
+        onMouseEnter={this.showButton}
+        onMouseLeave={this.hideButton}
         >
         <div>
           <div className="title"><EditText inputClassName="workInput" defaultValue={job.title}/></div>
@@ -44,9 +89,17 @@ class Work extends Component {
       </div>
   )
     return (
-      <div className="workExp">
-        <div className="work"><img alt="" className="icon" src={workIcon}></img> Work Experience</div>
+      <div 
+        className="workExp">
+        <div 
+          onMouseEnter={this.showAdd}
+          onMouseLeave={this.hideAdd}          
+          className="work">
+            <div><img alt="" className="icon" src={workIcon}></img>Work Experience</div> 
+            <div className="btnn"><button id="addWork" onClick={this.addJob} className='hideBtn'>Add Job</button></div>
+        </div>
         <div>{jobList}</div>
+        
       </div>
     )
   }

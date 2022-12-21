@@ -3,15 +3,17 @@
   margin-right: 10px;
 }
 .work {
-  padding: 10px 0;
+  padding-bottom: 10px;
   border-bottom: 3px solid #333;
-  display: flex ;
-  align-items: center;
+  display: flex;
   font-size: 1.3rem;
   font-weight: 900;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
-
+#addWork {
+  float: right;
+}
 
 .workCategory {
   display: grid;
@@ -43,7 +45,6 @@
 #deleteJob:hover {
   background-color: rgb(226, 84, 84);
 }
-.
 .date {
   display: flex;
 }
@@ -65,4 +66,20 @@
   width: 90%;
   height: 1.5rem;
   padding: 1px 5px;
+}
+#addWork {
+  text-align: center;
+  font-weight: 700;
+  color: #646D9B;
+  margin: 0 auto;
+  height: 1.3rem;
+  width: 5rem;
+  border: none;
+  border-radius: 3px;
+}
+.hideBtn {
+  display: none;
+}
+.showBtn {
+  display: block;
 }

@@ -85,79 +85,6 @@ class App extends Component {
             {
               id: uniqid(),
               name: 'Responsibility four'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility five'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility six'
-            }
-          ]
-        },
-        { 
-          id: uniqid(),
-          title: 'Job Title',
-          org: 'Organization',
-          date: 'Month - Year',
-          roles: [
-            {
-              id: uniqid(),
-              name: 'Responsibility one'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility two'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility three'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility four'
-            },     
-            {
-              id: uniqid(),
-              name: 'Responsibility five'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility six'
-            }
-      
-          ]
-        },
-        { 
-          id: uniqid(),
-          title: 'Job Title',
-          org: 'Organization',
-          date: 'Month - Year',
-          roles: [
-            {
-              id: uniqid(),
-              name: 'Responsibility one'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility two'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility three'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility four'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility five'
-            },
-            {
-              id: uniqid(),
-              name: 'Responsibility six'
             }
           ]
         }
@@ -208,13 +135,15 @@ class App extends Component {
         <div className='left'>
           <PersonalInfo user = {this.state.user}/>
           <Contacts contacts = {this.state.contacts} />
+          <Skills skills = {this.state.skills} />
           <Interests interests = {this.state.interests} />
           <References referees = {this.state.referees} />
+          
         </div>
         <div className='right'>
           <Work jobs= {this.state.jobs}/>
           <Education schools = {this.state.schools} />
-          <Skills skills = {this.state.skills} />
+          
         </div>
       </div>
     )

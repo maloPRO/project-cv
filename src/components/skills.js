@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { EditText } from 'react-edit-text';
 import '../styles/skills.css';
-import skillICon from '../images/skill.png';
 
 class Skills extends Component {
   constructor(props) {
@@ -25,7 +24,7 @@ class Skills extends Component {
       )
       return (
         <div className="skills">
-          <div className="skill"><img alt="" className="icon" src={skillICon}></img> Skills</div>
+          <div className="skill">Skills</div>
           <ul>{skillsList}</ul>
         </div>
       )

@@ -9,8 +9,6 @@
 }
 .skills ul {
   list-style-type: none;
-  display: grid;
-  grid-template: repeat(3, 1fr) / 1fr 2fr;
 }
 .skills ul li {
   padding: 2px 0;
