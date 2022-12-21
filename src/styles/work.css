@@ -27,7 +27,23 @@
 }
 .org {
   font-weight: 900;
+  display: flex;
+  justify-content: space-between;
 }
+#deleteJob {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url('../images/plus.png');
+  background-size: cover;
+  border: none;
+  rotate: 45deg;
+  border-radius: 50%;
+  padding: 1px;
+}
+#deleteJob:hover {
+  background-color: rgb(226, 84, 84);
+}
+.
 .date {
   display: flex;
 }

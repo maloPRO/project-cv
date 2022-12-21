@@ -33,3 +33,6 @@
   background-color: #737db1;
   padding: 20px 30px;
 }
+button {
+  cursor: pointer;
+}

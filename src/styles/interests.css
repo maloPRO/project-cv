@@ -24,7 +24,6 @@
   background: url('../images/plus.png');
   background-size: contain;
   transform: rotate(45deg);
-  background-color: rgb(230, 74, 74);
 }
 .interestInput {
   width: 90%;
@@ -47,6 +46,8 @@
   border: none;
   border-radius: 3px;
 }
-button:hover {
-  cursor: pointer;
+.interests ul li button:hover {
+  background-color: rgb(226, 84, 84);
+  padding: 1px ;
 }
+
