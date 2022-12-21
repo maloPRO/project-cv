@@ -52,8 +52,20 @@
   color: #111;
   list-style-type: circle;
   padding: 1px 0;
+  display: flex;
+  justify-content: space-between;
 }
-.roles span {
+.roles li button {
+  border: none;
+  width: .9em;
+  height: .9rem;
+  border-radius: 50%;
+  background-color: inherit;
+  background: url('../images/plus.png');
+  background-size: contain;
+  transform: rotate(45deg);
+}
+.dutyTitle {
   font-weight: 600;
   padding: 10px 0;
 }
@@ -82,4 +94,20 @@
 }
 .showBtn {
   display: block;
+}
+.duties {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  align-items: center;
+}
+.duties button {
+  text-align: center;
+  font-weight: 700;
+  color: #646D9B;
+  margin: 0 auto;
+  height: 1.3rem;
+  width: 5rem;
+  border: none;
+  border-radius: 3px;
 }
