@@ -34,11 +34,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #646D9B;
+  background-color: #8D95BF;
   border-radius: 50%;
 }
 .right {
-  background-color: #737db1;
+  background-color: #8D95BF;
   padding: 50px 20px;
 
 }
@@ -50,8 +50,9 @@ button {
   height: 2rem;
   width: 7rem;
   font-weight: 900;
-  background-color: #646D9B;
-  color: #f3bc81;
+  background-color: #8D95BF;
+  color: #111;
   border: none;
+  border-radius: 5px;
   margin:2px auto 5px 5px ;
 }

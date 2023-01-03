@@ -65,10 +65,12 @@ class Work extends Component {
     e.target.querySelector('#deleteJob').className = 'showBtn';
   }
   hideAddJobBtn = (e) => {
-    e.target.querySelector('#addWork').className = 'hideBtn';
+    e.target.querySelector('#addWork').className.remove('showBtn');
+    e.target.querySelector('#addWork').className.add('hideBtn');
   }
   showAddJobBtn = (e) => {
-    e.target.querySelector('#addWork').className = 'showBtn';
+    e.target.querySelector('#addWork').className.remove('hideBtn');
+    e.target.querySelector('#addWork').className.add('showBtn');
   }
   hideDeleteRoleBtn = (e) => {
     e.target.querySelector('#deleteRole').className = 'hideBtn';
