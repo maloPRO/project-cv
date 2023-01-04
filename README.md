@@ -7,4 +7,4 @@ This is an Odin Project CV project for the React JS curriculum. It's a simple CV
 - Git
 - npm
 ### Live Preview
-[CV - Maker](https://malopro.github.io/project-cv/)
+[CV Maker](https://malopro.github.io/project-cv/)
