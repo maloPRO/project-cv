@@ -49,7 +49,7 @@
   display: flex;
 }
 .roles li {
-  color: #111;
+  color: #333;
   list-style-type: circle;
   padding: 1px 0;
   display: flex;
@@ -86,7 +86,7 @@
 #addWork {
   text-align: center;
   font-weight: 700;
-  color: #646D9B;
+  color: #333;
   margin: 0 auto;
   height: 1.3rem;
   width: 5rem;
@@ -108,7 +108,7 @@
 .duties button {
   text-align: center;
   font-weight: 700;
-  color: #646D9B;
+  color: #333;
   margin: 0 auto;
   height: 1.3rem;
   width: 5rem;
