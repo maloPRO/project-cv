@@ -65,12 +65,10 @@ class Work extends Component {
     e.target.querySelector('#deleteJob').className = 'showBtn';
   }
   hideAddJobBtn = (e) => {
-    e.target.querySelector('#addWork').className.remove('showBtn');
-    e.target.querySelector('#addWork').className.add('hideBtn');
+    e.target.querySelector('#addWork').className = 'hideBtn';
   }
   showAddJobBtn = (e) => {
-    e.target.querySelector('#addWork').className.remove('hideBtn');
-    e.target.querySelector('#addWork').className.add('showBtn');
+    e.target.querySelector('#addWork').className = 'showBtn';
   }
   hideDeleteRoleBtn = (e) => {
     e.target.querySelector('#deleteRole').className = 'hideBtn';
@@ -114,12 +112,8 @@ class Work extends Component {
       </div>
   )
     return (
-      <div 
-        className="workExp">
-        <div 
-          onMouseEnter={this.showAddJobBtn}
-          onMouseLeave={this.hideAddJobBtn}          
-          className="work">
+      <div className="workExp">
+        <div onMouseEnter={this.showAddJobBtn} onMouseLeave={this.hideAddJobBtn} className="work">
             <div><img alt="" className="icon" src={workIcon}></img>Work Experience</div> 
             <div className="btnn"><button id="addWork" onClick={this.addJob} className='hideBtn'>Add Job</button></div>
         </div>
